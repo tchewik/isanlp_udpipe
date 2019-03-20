@@ -8,6 +8,6 @@ PPL_UDPIPE = PipelineCommon([(ProcessorUDPipe('/src/parser_UDPIPE/russian-ud-2.0
                                'lemma': 'lemma',
                                'postag' : 'postag',
                                'morph' : 'morph',
-                               'synt_dep_tree' : 'synt_dep_tree'}
+                               'syntax_dep_tree' : 'syntax_dep_tree'}
                              )],
                             name='default')
