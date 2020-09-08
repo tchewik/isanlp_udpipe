@@ -1,7 +1,8 @@
 from isanlp.processor_udpipe import ProcessorUDPipe
 from isanlp import PipelineCommon
 
-PPL_UDPIPE = PipelineCommon([(ProcessorUDPipe('/src/parser_UDPIPE/russian-ud-2.0-170801.udpipe'),
+def create_pipeline(delay_init=False):
+    return PipelineCommon([(ProcessorUDPipe('/src/parser_UDPIPE/model.udpipe'),
                               ['morph'],
                               {'tokens' : 'tokens',
                                'sentences' : 'sentences',
